@@ -16,34 +16,35 @@
     <div class="bodyContainer">
         <div class="mainCharacterView left" >
                 <div class="nameBox">Captain</div>
-                <img src="player.gif">
+                <img src="player.gif" class="playerimg">
                 <p>
-                    <button onclick="attack()">ATTACK</button>
-                    <button onclick="retreat()">RETREAT</button>
+                    <button id="attackButton" onclick="attack()">ATTACK</button>
+                    <button id="retreatButton" onclick="retreat()">RETREAT</button>
                 </p>
-                <div class="playerImage"></div>
+                <div id="playerImage"></div>
+                <div id="playerHull">
+                Hull: 15 </div>
                 <div class="playerStats">
-                Hull : 15 <br>
                 FirePower : 5 <br>
                 Accuracy : .7 <br>
                 </div>
         </div>
         <div class="mainCharacterView right">         
             <div class="nameBox">Enemy</div>
-            <img src="alien.gif">
+            <img src="alien.gif" class="alienimg">
             <div class="enemyImage"></div>
+            <div id="enemyHull">
+                Hull: 6 </div>
                 <div class="enemyStats">
-                    Hull : 6 <br>
                     FirePower : 3 <br>
                     Accuracy : .6 <br>
                 </div>          
         </div>
         <div id= "bottomRow">
              <h1>Welcome To Space Battle!</h1>
-             <p>You are USS Schwarzenegger facing against Alien Ships To Save Earth!</p>
-             <button onclick="beginBattle()">BEGIN BATTLE</button>
+             <p>You Are USS Schwarzenegger Facing Off Against Alien Ships To Save Planet Earth!</p>
+             <!-- <button onclick="beginBattle()">BEGIN BATTLE</button> --> 
+            </div>
 
-        </div>
-        <div id = "message"></div>
 </body>
 </html>
