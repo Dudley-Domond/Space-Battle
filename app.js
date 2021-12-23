@@ -1,4 +1,6 @@
-const uss = prompt("CAPTAIN, DO YOU WISH TO MAKE THE FIRST MOVE?");
+alert("BEGIN GAME");
+
+const uss = prompt("CAPTAIN, YOU CAN MAKE THE FIRST MOVE!");
 
 //const bottomRow = document.getElementsById('bottomRow');
 const playerStats = document.getElementsByClassName('playerStats');
@@ -16,29 +18,18 @@ function attack(){
     if (hitChance <=0.8){ // chance of sucessful hit
        let dmg = Math.round(Math.random()*2.5)+2.5;// damage done if hits succesful (5)
        playerHull -=dmg; 
-       playerImage.innerHTML = "You hit the alien ship with your attack, doing " + dmg + " damage.</br></br>Alien ship now has " + enemyHull + "hull!";
-    
+       playerImage.innerHTML = "You Hit The Alien Ship With Your Attack, Doing " + dmg + " Damage.</br></br>Alien Ship Now Has " + enemyHull + " Hull!";
+       return enemyHull;
+
     } else {
-       playerImage.innerHTML="You missed!!! </br></br>Try again, The world's depending on you..."
+       playerImage.innerHTML="You Missed!!! </br></br>Try again, The World's Depending On You...";
 
     }
+
+
 }
 
-/*
-class Ship{
-constructor(hull, firepower, accuracy) {
-    this.hull = hull;
-    this.firepower = firepower;
-    this.accuracy = accuracy;
+
+function retreat(){
+    playerImage.innerHTML = "Find Some Cover Elsewhere Untill The Smoke Clears!!! "
 }
-attack(enemy){
-    let hitChance = Math.random();
-    if(hitChance < this.accuracy){
-        enemy.takesDamage(this.firepower);
-        return "You've been hit"
-    }
-}   
-takesDamage(damage){
-    this.hull -= damage;
-}
-*/
