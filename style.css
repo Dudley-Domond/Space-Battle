@@ -21,6 +21,11 @@ button:hover{
     background-color: black;
     color:white;
 }
+
+#retreatButton:hover {
+    background-color:red;
+    color:white;
+}
 #bottomRow {
     padding:20px;
     font: 20pt Arial;
@@ -84,8 +89,8 @@ align-items: center;
 }
 
 #playerImage:hover {
-    background-color:orangered;
-}
+    background-color:white;}
+
 .playerStats{
     display: flex;
     justify-content: center;
