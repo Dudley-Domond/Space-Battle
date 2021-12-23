@@ -1,26 +1,33 @@
+body {
+    margin-top:5px;
+    padding-top:5px,;
+    padding-bottom:5px;
+    padding-left:5px;
+    padding-right:5px;
+}
+
 button {
     font-size: 20px;
     font: 15pt Arial, Helvet;  
     background-color: white;
     border: 3px solid;
-    border-color: black;
+    border-color: orange;
     border-radius: 20px;
     padding: 15px 25px;
     text-align: center;
     font-weight: bold;
 }
-
 button:hover{
     background-color: black;
     color:white;
 }
-
 #bottomRow {
     padding:20px;
     font: 20pt Arial;
     text-align: bottom;
+    color:white;
+  
 }
-
 img {
     width : 240px;
 }
@@ -41,20 +48,12 @@ img {
     margin: 0;
     padding: 0;
 }
-
 .mainCharacterView{
-
 width: 50%;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
-}
-.left{
-
-}
-.right{
-    
 }
 
 .nameBox{
@@ -67,9 +66,8 @@ align-items: center;
     align-items: center;
     font-size: 2em;
     box-shadow: 0px 0px 20px 10px white;
-
 }
-.playerImage{
+#playerImage{
     border: 1px solidblack;
     width: 30vw;
     height: 40vh;
@@ -78,9 +76,15 @@ align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 20px 10px white;
-    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-style: oblique;
+    font-size:27px;
+    font-weight:bolder;
+    color:orange;
+}
 
-    
+#playerImage:hover {
+    background-color:orangered;
 }
 .playerStats{
     display: flex;
@@ -93,9 +97,26 @@ align-items: center;
     font-size: 1.5em;
     box-shadow: 0px 0px 20px 10px white;
     border-radius: 2%;
-
-
+    color:white;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+#playerHull {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solidblack;
+    width: 12vw;
+    height: 8vw;
+    text-align: center;
+    font-size: 2.0em;
+    box-shadow: 0px 0px 20px 10px black;
+    border-radius: 2%;
+    color:white;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
 .enemyImage{
     border: 1px solidblack;
     width: 30vw;
@@ -105,9 +126,7 @@ align-items: center;
     background-position: center;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 20px 10px white;
-    
-
-    
+        
 }
 .enemyStats{
     display: flex;
@@ -120,5 +139,30 @@ align-items: center;
     font-family: 'Share Tech Mono', monospace;
     font-size: 1.5em;
     box-shadow: 0px 0px 20px 10px white;
+    border-radius: 2%;
+    color:white;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
+#enemyHull {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solidblack;
+    width: 12vw;
+    height: 8vw;
+    text-align: center;
+    font-size: 2.0em;
+    box-shadow: 0px 0px 20px 10px black;
+    border-radius: 2%;
+    color:white;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.alienimg{
+    border: 5px dotted
+}
+.playerimg{
+    border: 5px dotted
 }
