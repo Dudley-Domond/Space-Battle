@@ -24,8 +24,6 @@ function attack(){
     }
 }
 
-
-
 /*
 class Ship{
 constructor(hull, firepower, accuracy) {
