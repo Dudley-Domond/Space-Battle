@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<script src="app.js"></script>
+</head>
+<body>
+    <div style="background-image: url('spacebackground.jpg');">
+    <div class="bodyContainer">
+        <div class="mainCharacterView left" >
+                <div class="nameBox">Captain</div>
+                <img src="player.gif">
+                <p>
+                    <button onclick="attack()">ATTACK</button>
+                    <button onclick="retreat()">RETREAT</button>
+                </p>
+                <div class="playerImage"></div>
+                <div class="playerStats">
+                Hull : 15 <br>
+                FirePower : 5 <br>
+                Accuracy : .7 <br>
+                </div>
+        </div>
+        <div class="mainCharacterView right">         
+            <div class="nameBox">Enemy</div>
+            <img src="alien.gif">
+            <div class="enemyImage"></div>
+                <div class="enemyStats">
+                    Hull : 6 <br>
+                    FirePower : 3 <br>
+                    Accuracy : .6 <br>
+                </div>          
+        </div>
+        <div id= "bottomRow">
+             <h1>Welcome To Space Battle!</h1>
+             <p>You are USS Schwarzenegger facing against Alien Ships To Save Earth!</p>
+             <button onclick="beginBattle()">BEGIN BATTLE</button>
+
+        </div>
+        <div id = "message"></div>
+</body>
+</html>
