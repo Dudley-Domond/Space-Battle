@@ -1,4 +1,4 @@
-//const uss = prompt("Do you want to attack the first alien ship?");
+const uss = prompt("CAPTAIN, DO YOU WISH TO MAKE THE FIRST MOVE?");
 
 //const bottomRow = document.getElementsById('bottomRow');
 const playerStats = document.getElementsByClassName('playerStats');
