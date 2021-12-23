@@ -16,11 +16,10 @@ function attack(){
     if (hitChance <=0.8){ // chance of sucessful hit
        let dmg = Math.round(Math.random()*2.5)+2.5;// damage done if hits succesful (5)
        playerHull -=dmg; 
-       bottomRow.innerHTML = "You hit the enemy with your attack, doing " + dmg + " damage. Enemy now has " + enemyHull + "hull";
+       playerImage.innerHTML = "You hit the alien ship with your attack, doing " + dmg + " damage.</br></br>Alien ship now has " + enemyHull + "hull!";
     
     } else {
-
-      bottomRow.innerHTML="You missed";
+       playerImage.innerHTML="You missed!!! </br></br>Try again, The world's depending on you..."
 
     }
 }
@@ -33,16 +32,13 @@ constructor(hull, firepower, accuracy) {
     this.hull = hull;
     this.firepower = firepower;
     this.accuracy = accuracy;
-
 }
-
 attack(enemy){
     let hitChance = Math.random();
     if(hitChance < this.accuracy){
         enemy.takesDamage(this.firepower);
         return "You've been hit"
     }
-
 }   
 takesDamage(damage){
     this.hull -= damage;
